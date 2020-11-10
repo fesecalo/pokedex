@@ -4,7 +4,7 @@ Página web estática que permite a los usuarios conocer información acerca de 
 
 # Vistas
 
-![principal](https://github.com/fesecalo/pokedex/blob/master/assets/img/readme/principal.png)
+![principal](/assets/img/readme/principal.png)
 
 # Construido con...
 
