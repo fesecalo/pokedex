@@ -7,7 +7,7 @@ Página web estática que permite a los usuarios conocer información acerca de 
 Bootstrap como framework de estilos.
 jQuery para dar dinamismo a la página.
 AJAX para consultar a la api.
-plugin Canvas JS para realizar el gráfico.
+Plugin Canvas JS para realizar el gráfico.
 
 # Temáticas abordadas
 
