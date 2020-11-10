@@ -1,0 +1,39 @@
+body
+{
+	font-family: 'Press Start 2P', cursive;
+	background-image: url(../img/pokeball.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	text-transform: capitalize;
+}
+
+.transparente-rojo
+{
+	background: #dc35453b;
+/*	background-image: url(../img/pokeball.png);
+	opacity: 0.5;*/
+}
+
+.transparente-negro
+{
+	background: #212529cf;
+}
+
+.popover, .tooltip
+{
+	font-family: 'Press Start 2P', cursive;
+}
+
+h1, h3
+{
+    word-wrap:break-word;
+}
+
+.bg-modal
+{
+	background-image: url(../img/dex.png);
+	background-size: cover;
+}

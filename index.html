@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>POKEDEX</title>
+
+    <meta name="author" content="Felipe Castillo López" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16"/>
+
+    <!--CSS de Bootstrap 4.2.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header class="container p-4 w-75 text-white text-center">
+      <h1>¡Atrápalos Ya!</h1>
+      <p>Bienvenido a la pokedex. Te ayudaré en tu búsqueda</p>
+    </header>
+
+    <!-- Formulario -->
+    <section class="container p-4 w-75 transparente-rojo rounded">
+      <form id="formulario">
+        <div class="form-group">
+          <input type="text" class="form-control font-weight-light" id="txt-poke" placeholder="Nombre o número del Pokemon" data-toggle="popover" data-placement="top" data-timeout="2000" data-content="Sólo letras y/o números" autocomplete="off">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-light" id="btn-buscar">Buscar!</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- resultados de la busqueda -->
+    <section class="container p-4 my-4 w-75 transparente-negro rounded" id="resultado">
+        
+      <!-- progress bar -->
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <!-- detalle pokemon -->
+      <div class="container" id="detallePoke">
+        <div class="row">
+          <!-- nombre del poke -->
+          <div class="col-md-12 text-center">
+            <h3 id="pokeNombre"></h3>
+          </div>
+
+          <!-- imagen del poke -->
+          <div class="col-md-6 mx-auto">
+            <img class="rounded w-75" id="pokeImage" src="" alt="poke_image">
+          </div>
+
+          <!-- detalles -->
+          <div class="col-md-6" id="detalles">
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-light mx-auto" data-toggle="modal" data-target="#pokeStats">
+            Estadísticas
+          </button>
+
+      </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="pokeStats" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content  bg-modal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Estadísticas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+               <div id="chartContainer" style="height: 360px; width: 100%;"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS 4.2.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- canvas para el gráfico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+
+    <!-- js personalizado -->
+    <script type="text/javascript" src="assets/js/validaciones.js"></script>
+
+  </body>
+</html>
