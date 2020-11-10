@@ -2,6 +2,10 @@
 
 Página web estática que permite a los usuarios conocer información acerca de pokemones antiguos, de esta forma estar preparados para las futuras estrategias de los nuevos juegos de pokemon.
 
+# Vistas
+
+![principal](https://github.com/fesecalo/pokedex/blob/master/assets/img/readme/principal.png)
+
 # Construido con...
 
 Bootstrap como framework de estilos.
