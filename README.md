@@ -4,7 +4,7 @@ Página web estática que permite a los usuarios conocer información acerca de 
 
 # Vistas
 
-![principal](/assets/img/readme/principal.png)
+![principal](https://user-images.githubusercontent.com/63039556/98733198-ee8cfa00-237e-11eb-9fde-746c7f4baa8d.png)
 
 # Construido con...
 
